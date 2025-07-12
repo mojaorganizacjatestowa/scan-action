@@ -22,6 +22,7 @@ jobs:
           image-tag: sysdiglabs/dummy-vuln-app:latest
           # API token for Sysdig Scanning auth
           sysdig-secure-token: ${{ secrets.SYSDIG_API_TOKEN }}
+          sysdig-secure-url: https://eu1.app.sysdig.com
           stop-on-failed-policy-eval: true
           stop-on-processing-error: true
           severity-at-least: medium

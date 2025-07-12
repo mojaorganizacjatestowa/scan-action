@@ -14,6 +14,8 @@ jobs:
 
       - name: Scan dummy-vuln-app from registry
         id: scan
+        env:
+         SYSDIG_SECURE_URL: "https://eu1.app.sysdig.com"
         uses: ./
         with:
           # Tag of the image to analyse
